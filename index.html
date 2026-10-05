@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa do Mel — Produtos Naturais · Foz do Iguaçu</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI', Arial, sans-serif; background:#fffdf5; color:#1a1a1a; line-height:1.55; }
+  .wrap { max-width:640px; margin:0 auto; }
+  header.top { background:#1a1a1a; padding:12px 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:4px solid #f5c400; position:sticky; top:0; z-index:10; }
+  .logo { font-weight:900; font-size:1.25rem; color:#f5c400; letter-spacing:.3px; }
+  .logo small { display:block; font-size:.66rem; color:#fff; letter-spacing:3px; font-weight:700; }
+  .lang { display:flex; gap:6px; align-items:center; }
+  .lang button { border:2px solid #f5c400; background:#1a1a1a; color:#f5c400; font-weight:800; border-radius:99px; padding:6px 12px; font-size:.8rem; cursor:pointer; }
+  .lang button.on { background:#f5c400; color:#1a1a1a; }
+  .hero { text-align:center; color:#1a1a1a; padding:60px 20px 46px; background:linear-gradient(160deg,#f5c400 0%,#ffd94d 60%,#ffe89a 100%); }
+  .hero .bee { font-size:3rem; }
+  .hero h1 { font-size:2.1rem; line-height:1.15; margin:8px 0; }
+  .hero p { margin:10px 0 22px; font-size:1.02rem; font-weight:600; }
+  .cta-row { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:13px 26px; border-radius:12px; text-decoration:none; font-weight:800; font-size:1rem; }
+  .btn.ig { background:#1a1a1a; color:#f5c400; box-shadow:0 4px 0 #000; }
+  .btn.map { background:#fff; color:#1a1a1a; box-shadow:0 4px 0 #d9b300; }
+  .btn:active { transform:translateY(2px); box-shadow:none; }
+  section { padding:28px 20px; }
+  section h2 { text-align:center; font-size:1.5rem; margin-bottom:4px; color:#1a1a1a; }
+  section .lede { text-align:center; color:#8a7a20; margin-bottom:18px; font-size:.95rem; }
+  .prods { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .prod { background:#fff; border:2px solid #f5c400; border-radius:18px; padding:18px 12px; text-align:center; }
+  .prod .e { font-size:2.2rem; }
+  .prod h3 { font-size:.98rem; color:#1a1a1a; margin:8px 0 4px; }
+  .prod p { font-size:.8rem; color:#8a7a20; }
+  .porque { background:#1a1a1a; color:#fff; border-radius:24px; padding:26px 20px; text-align:center; }
+  .porque h2 { color:#f5c400; }
+  .porque p { margin:10px 0 6px; font-size:.95rem; color:#f5ecd0; }
+  .porque .stars { color:#f5c400; font-size:1.2rem; letter-spacing:2px; }
+  .visit { background:#fff; border-radius:24px; padding:24px 20px; border:2px solid #f5c400; }
+  .visit h2 { color:#1a1a1a; }
+  .info { display:grid; gap:10px; margin:14px 0; }
+  .info div { background:#fffdf5; border-radius:14px; padding:12px 14px; font-size:.92rem; border:1px solid #f0e2a0; }
+  .info b { color:#a08000; }
+  .info a { color:#1a1a1a; font-weight:700; }
+  .qrrow { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:16px; }
+  .qr { background:#fff; border:2px solid #f5c400; border-radius:16px; padding:12px; text-align:center; }
+  .qr img { width:120px; height:120px; display:block; }
+  .qr span { font-size:.78rem; font-weight:700; color:#1a1a1a; display:block; margin-top:6px; }
+  footer { text-align:center; padding:24px 16px 34px; font-size:.78rem; color:#8a7a20; background:#1a1a1a; }
+  footer a { color:#f5c400; text-decoration:none; font-weight:700; }
+  footer .addr { color:#ccc; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="logo">🐝 Casa do Mel<small data-pt="PRODUTOS NATURAIS" data-es="PRODUCTOS NATURALES" data-en="NATURAL PRODUCTS">PRODUTOS NATURAIS</small></div>
+  <div class="lang">
+    <button id="btn-pt" class="on" onclick="setLang('pt')">PT</button>
+    <button id="btn-es" onclick="setLang('es')">ES</button>
+    <button id="btn-en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="bee">🐝</div>
+  <h1 data-pt="A loja da abelha gigante" data-es="La tienda de la abeja gigante" data-en="The giant bee store">A loja da abelha gigante</h1>
+  <p data-pt="Tudo em produtos naturais — agora em Foz do Iguaçu!" data-es="Todo en productos naturales — ¡ahora en Foz do Iguaçu!" data-en="Everything in natural products — now in Foz do Iguaçu!">Tudo em produtos naturais — agora em Foz do Iguaçu!</p>
+  <div class="cta-row">
+    <a class="btn ig" href="https://www.instagram.com/casadomelfoz/">📸 Instagram</a>
+    <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=Casa+do+Mel+Foz+do+Igua%C3%A7u+Av+Felipe+Wandscheer+2769" data-pt="📍 Como chegar" data-es="📍 Cómo llegar" data-en="📍 Directions">📍 Como chegar</a>
+  </div>
+</div>
+
+<section>
+  <h2><span data-pt="🍯 Nossos produtos" data-es="🍯 Nuestros productos" data-en="🍯 Our products">🍯 Nossos produtos</span></h2>
+  <p class="lede" data-pt="Direto da natureza para você" data-es="Directo de la naturaleza para ti" data-en="Straight from nature to you">Direto da natureza para você</p>
+  <div class="prods">
+    <div class="prod"><div class="e">🍯</div><h3 data-pt="Méls" data-es="Mieles" data-en="Honeys">Méls</h3><p data-pt="Jataí, Mandaçaia e mais" data-es="Jataí, Mandaçaia y más" data-en="Jataí, Mandaçaia & more">Jataí, Mandaçaia e mais</p></div>
+    <div class="prod"><div class="e">🌿</div><h3 data-pt="Própolis" data-es="Propóleos" data-en="Propolis">Própolis</h3><p data-pt="Verde, extrato e mais" data-es="Verde, extracto y más" data-en="Green, extract & more">Verde, extrato e mais</p></div>
+    <div class="prod"><div class="e">🍫</div><h3 data-pt="Doces naturais" data-es="Dulces naturales" data-en="Natural sweets">Doces naturais</h3><p data-pt="Zero açúcar e mais" data-es="Cero azúcar y más" data-en="Sugar-free & more">Zero açúcar e mais</p></div>
+    <div class="prod"><div class="e">🌾</div><h3 data-pt="Grãos e cereais" data-es="Granos y cereales" data-en="Grains & cereals">Grãos e cereais</h3><p data-pt="A granel e mais" data-es="A granel y más" data-en="Bulk & more">A granel e mais</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="porque">
+    <div class="stars">★★★★★</div>
+    <h2 data-pt="Por que a Casa do Mel?" data-es="¿Por qué Casa do Mel?" data-en="Why Casa do Mel?">Por que a Casa do Mel?</h2>
+    <p data-pt="Produtos naturais selecionados, atendimento de quem entende — e a famosa abelha gigante na porta, um ponto imperdível em Foz do Iguaçu." data-es="Productos naturales seleccionados, atención de quien sabe — y la famosa abeja gigante en la puerta, un punto imperdible en Foz do Iguaçu." data-en="Selected natural products, service from people who know — and the famous giant bee at the door, a must-see in Foz do Iguaçu.">Produtos naturais selecionados, atendimento de quem entende — e a famosa abelha gigante na porta, um ponto imperdível em Foz do Iguaçu.</p>
+  </div>
+</section>
+
+<section>
+  <div class="visit">
+    <h2 data-pt="📍 Visite-nos" data-es="📍 Visítanos" data-en="📍 Visit us">📍 Visite-nos</h2>
+    <p class="lede" data-pt="Estamos te esperando" data-es="Te esperamos" data-en="We're waiting for you">Estamos te esperando</p>
+    <div class="info">
+      <div><b data-pt="Endereço:" data-es="Dirección:" data-en="Address:">Endereço:</b> Av. Felipe Wandscheer, 2769 – Foz do Iguaçu – PR</div>
+      <div><b data-pt="Horário:" data-es="Horario:" data-en="Hours:">Horário:</b> <span data-pt="A partir das 8:00" data-es="Desde las 8:00" data-en="From 8:00 AM">A partir das 8:00</span></div>
+      <div><b>Instagram:</b> <a href="https://www.instagram.com/casadomelfoz/">@casadomelfoz</a></div>
+    </div>
+    <div class="qrrow">
+      <div class="qr"><img src="qr/qr-maps.png" alt="QR localização"><span data-pt="Como chegar" data-es="Cómo llegar" data-en="Directions">Como chegar</span></div>
+      <div class="qr"><img src="qr/qr-instagram.png" alt="QR Instagram"><span>Instagram</span></div>
+      <div class="qr"><img src="qr/qr-review.png" alt="QR avaliação"><span data-pt="Avalie-nos" data-es="Déjanos tu reseña" data-en="Rate us">Avalie-nos</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="https://www.instagram.com/casadomelfoz/">🐝 Casa do Mel · @casadomelfoz</a><br>
+  <span class="addr">Av. Felipe Wandscheer, 2769 – Foz do Iguaçu – PR</span>
+</footer>
+
+</div>
+<script>
+function setLang(l){
+  document.documentElement.lang = (l === 'pt') ? 'pt-BR' : l;
+  document.querySelectorAll('[data-pt]').forEach(function(el){
+    el.textContent = el.getAttribute('data-' + l);
+  });
+  ['pt','es','en'].forEach(function(x){
+    document.getElementById('btn-' + x).classList.toggle('on', x === l);
+  });
+  try { localStorage.setItem('casadomel-lang', l); } catch(e) {}
+}
+(function(){
+  var l = 'pt';
+  try { l = localStorage.getItem('casadomel-lang') || 'pt'; } catch(e) {}
+  if (['pt','es','en'].indexOf(l) < 0) l = 'pt';
+  setLang(l);
+})();
+</script>
+</body>
+</html>
